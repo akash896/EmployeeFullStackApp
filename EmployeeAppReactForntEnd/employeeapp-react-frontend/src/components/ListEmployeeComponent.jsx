@@ -9,11 +9,11 @@ class ListEmployeeComponent extends Component {
         }
     }
     
-    // componentDidMount(){
-    //     EmployeeService.getEmployees().then((res) => {
-    //         this.setState({employees:res.data});
-    //     });
-    // }
+    componentDidMount(){
+        EmployeeService.getEmployees().then((res) => {
+            this.setState({employees: res.data});
+        });
+    }
     render() {
         return (
             <div>
